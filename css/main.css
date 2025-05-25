@@ -1,8 +1,18 @@
 body {
-  font-family: 'Roboto', Helvetica, sans-serif;
-  background-color: grey;
-  margin: 0;
-  padding: 0;
+  font-family: "Roboto", Helvetica, sans-serif;
+  background-color: rgb(242, 242, 242); /*fixing the contrast */
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* styling the skip link */
+.skip-link {
+  background: #000;
+  color: #fff;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
 h1,
@@ -11,13 +21,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Stick No Bills', 'Roboto', Helvetica, sans-serif;
-}
-
-.container {
-  max-width: 1080px;
-  margin: 0 auto;
-  padding: 0 1rem;
+  font-family: "Stick No Bills", "Roboto", Helvetica, sans-serif;
 }
 
 img {
@@ -29,7 +33,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding: 0;
+  padding: 2em;
 }
 
 .main-nav ul li {
@@ -49,7 +53,7 @@ form textarea {
   display: block;
   width: 100%;
   margin-bottom: 1rem;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
 }
 
 form textarea {
@@ -65,6 +69,12 @@ form button {
   padding: 1rem;
   text-transform: uppercase;
 }
+
+form button:hover {
+   background: black;
+   color: #fff;
+  border: 2px solid rgb(186, 186, 186);
+} 
 
 .site-footer {
   padding: 2rem 0;
